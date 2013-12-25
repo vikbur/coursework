@@ -1,0 +1,55 @@
+body {
+  background: url(bg.jpg) no-repeat; 
+  background-size: cover;
+  font-size: 1.5em;
+}
+
+h1 {  
+    color: black;
+    font-size: 1em;
+}
+
+ul {
+    color: white;
+    list-style-image: url(list.png);
+    list-style-position: inside;
+}
+
+li a {
+    color: white;
+}
+
+a {
+    color: blue;
+    text-decoration: none; 
+} 
+
+a:hover {
+    color: gray;
+}
+
+label {
+    color: white;
+}
+
+.col {
+    color: black;
+}
+
+.demo-placeholder {
+    width: 60%;
+    height: 60%;
+    font-size: 10px;
+    line-height: 1.5em;
+    margin: 0px;
+    background-color: white;
+}
+
+#placeholder {
+    width: 600px;
+}
+.legend {
+    margin: 0px;
+    background-color: white;
+    width: 600px;   
+}

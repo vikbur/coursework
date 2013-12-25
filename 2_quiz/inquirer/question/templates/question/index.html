@@ -1,0 +1,14 @@
+{% extends "question/base.html" %}
+{% block title %}Выбор вопроса{% endblock %}
+{% block content %}
+ <h1>Выберите вопрос</h1>
+{% if last_questions %}
+    <ul>
+    {% for question in last_questions %}
+        <li><a href="/question/{{ question.id }}/">{{ question.question }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Вопросы не созданы.</p>
+{% endif %}
+{% endblock %}

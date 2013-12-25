@@ -1,0 +1,15 @@
+{% extends "question/base.html" %}
+{% block title %}Результаты опроса{% endblock %}
+{% block content %}
+<h1>{{ question.question }}</h1>
+<ul>
+{% for choice in question.choice_set.all %}
+    <li value="{{ choice.voted }}" question="{{ choice.choice }}" number="{{ choice.id }}">{{ choice.choice }} -- {{ choice.voted }}</li>
+{% endfor %}
+    <div class="demo-container">
+        <div id="placeholder" class="demo-placeholder"></div>
+        <div id="legend" class="legend"></div>
+    </div>
+</ul>
+<a href="{% url 'index' %}">Перейти к вопросам</a>
+{% endblock %}
