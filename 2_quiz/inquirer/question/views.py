@@ -6,6 +6,7 @@ from question.models import Choice
 from question.models import Question
 from django.core.urlresolvers import reverse
 
+
 class IndexView(generic.ListView):
     template_name = 'question/index.html'
     context_object_name = 'last_questions'
