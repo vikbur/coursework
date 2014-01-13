@@ -1,5 +1,5 @@
 {% extends "question/base.html" %}
-{% block title %}Варианты ответов{% endblock %}
+{% block title %}Ответ{% endblock %}
 {% block content %}
 <h1>{{ question.question }}</h1>
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}

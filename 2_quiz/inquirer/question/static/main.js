@@ -1,9 +1,4 @@
 $(function() {
-    //var placeholder = $("#placeholder");
-    //var arr = $('li').map(function() {
-      //  var $item = $(this);
-        //  return  [[$item.attr('number'), $item.attr('value')]];}).get();
-    //var data = [{label: "Йо-хо-хо, c с Новым годом!", color: "red", data: arr}];    
     var data = $('li').map(function() {
         var $item = $(this);
         var arr = [];

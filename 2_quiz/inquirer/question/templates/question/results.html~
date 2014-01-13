@@ -2,12 +2,11 @@
 {% block title %}Результаты опроса{% endblock %}
 {% block content %}
 <h1>{{ question.question }}</h1>
-<a href="{% url 'index' %}">Вернуться на главную</a>
 <ul>
 {% for choice in question.choice_set.all %}
     <li value="{{ choice.voted }}" question="{{ choice.choice }}" number="{{ choice.id }}">{{ choice.choice }} -- {{ choice.voted }}</li>
 {% endfor %}
-
+<a href="{% url 'index' %}">Вернуться на главную</a>
     <div class="demo-container">
         <div id="placeholder" class="demo-placeholder"></div>
         <div id="legend" class="legend"></div>

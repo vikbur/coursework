@@ -5,7 +5,7 @@
 {% if last_questions %}
     <ul>
     {% for question in last_questions %}
-        <li><a href="{{ question.id }}/">{{ question.question }}</a></li>
+        <li><a href="/question/{{ question.id }}/">{{ question.question }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

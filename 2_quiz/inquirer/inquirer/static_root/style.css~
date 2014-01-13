@@ -7,21 +7,23 @@ body {
 h1 {  
     color: black;
     font-size: 1em;
+    margin:0 auto;
 }
 
 ul {
-    color: white;
+    color: black;
     list-style-image: url(list.png);
     list-style-position: inside;
 }
 
 li a {
-    color: white;
+    color: black;
 }
 
 a {
     color: blue;
-    text-decoration: none; 
+    text-decoration: none;
+    font-size: 0.5em; 
 } 
 
 a:hover {
@@ -29,7 +31,7 @@ a:hover {
 }
 
 label {
-    color: white;
+    color: black;
 }
 
 .col {
